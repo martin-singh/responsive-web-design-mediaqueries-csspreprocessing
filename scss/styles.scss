@@ -1,0 +1,16 @@
+@import "partials/reset";
+
+@import "partials/variables";
+
+/* MOBILE FIRST APPROACH */
+@import "partials/small-default";
+
+/* TABLET SCREEN SIZE */
+@media only screen and (min-width: 560px) {
+    @import "partials/medium";
+} // end media query
+
+/* DESKTOP SCREEN SIZE */
+@media only screen and (min-width: 1140px) {
+    @import "partials/large";
+} // end media query

@@ -1,13 +1,12 @@
 html {
-    /* Prevent Phone resize */
+    // Prevent Phone resize
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
 
 * {
-    /* Box Model standardizing */
+    // Box Model standardizing
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-
