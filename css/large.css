@@ -1,0 +1,5 @@
+/* DESKTOP SCREEN SIZE */
+@media only screen and (min-width: 1140px) {
+    
+    h1 {color: green;}
+} /* end of media query */
