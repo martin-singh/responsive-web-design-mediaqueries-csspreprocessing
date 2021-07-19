@@ -23,56 +23,68 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 nav ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 /* change colours to suit your needs */
 ins {
   background-color: #ff9;
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* change colours to suit your needs */
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 del {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
-  cursor: help; }
+  cursor: help;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* change border colour to suit your needs */
 hr {
@@ -81,20 +93,93 @@ hr {
   border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 input, select {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /* MOBILE FIRST APPROACH */
 html {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+}
 
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+header {
+  padding: 1rem 2%;
+  background-color: #424e64;
+  color: #bbc2ca;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+header h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+nav {
+  background-color: #bbc2ca;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul li {
+  float: left;
+  width: 25%;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul li.active {
+  background-color: #9ea8b4;
+}
+nav ul li a {
+  display: block;
+  padding: .5rem 0;
+  color: #424e64;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.75s ease, color 0.75s ease;
+}
+nav ul li a:hover {
+  background-color: #424e64;
+  color: #bbc2ca;
+}
+
+footer {
+  width: 100%;
+  background-color: #424e64;
+}
+footer p {
+  padding: .75rem 0;
+  color: #bbc2ca;
+  font-size: 0.9rem;
+  text-align: center;
+}
+footer p > a {
+  color: #bbc2ca;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* TABLET SCREEN SIZE */
 /* DESKTOP SCREEN SIZE */
