@@ -6,11 +6,11 @@
 @import "partials/small-default";
 
 /* TABLET SCREEN SIZE */
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 35rem) {
     @import "partials/medium";
 } // end media query
 
 /* DESKTOP SCREEN SIZE */
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 60rem) {
     @import "partials/large";
 } // end media query

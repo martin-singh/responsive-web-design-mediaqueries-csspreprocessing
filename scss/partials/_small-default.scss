@@ -19,9 +19,12 @@ body {
 }
 
 // --------------- HEADER ---------------
+div#header-wrapper {
+    background-color: $primaryColor;
+} // end wrapper
+
 header {
     padding: 1rem $gutter;
-    background-color: $primaryColor;
     color: $secondaryColor;
 
     h1 {
@@ -32,6 +35,21 @@ header {
         font-size: 1.3rem;
         font-weight: $normalWeight;
     } // end h2
+
+    form {
+        float: right;
+    } // end form
+    form input {
+        margin-right: 2%;
+        border: none;
+        border-radius: 10px;
+        padding: .2rem;
+        width: 6rem;
+        transition: width .5s;
+    } // end input
+    form input:focus {
+        width: 8rem;
+    } // end pseudo input
 } // end header
 
 // --------------- NAVIGATION ---------------
@@ -114,6 +132,29 @@ main {
         text-align: center;
     } // end figure figcaption
 
+    div.pop {
+        padding: 1rem 0;
+        background-color: $accent;
+        text-align: center;
+        clear: both;
+
+        .title {
+            font-size: 2.5rem;
+        } // end title
+        .subtitle {
+            font-size: 2rem;
+            font-weight: $boldWeight;
+        } // end subtitle
+        .copy {
+            padding: .5rem 0;
+        } //end copy
+        .copy span {
+            color: $primaryColor;
+            font-size: 3rem;
+            font-weight: $boldWeight;
+        } // end span
+    } // end div
+
     div.blog article {
         margin: .5rem $gutter;
         width: 100% - $gutterDouble;
@@ -121,10 +162,13 @@ main {
 } // end main
 
 // --------------- FOOTER ---------------
+div#footer-wrapper {
+    background-color: $primaryColor;
+} // end wrapper
+
 footer {
     width: 100%;
-    background-color: $primaryColor;
-
+    
     p {
         padding: .75rem 0;
         color: $secondaryColor;

@@ -31,7 +31,7 @@ body {
 }
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, main {
   display: block;
 }
 
@@ -118,10 +118,13 @@ body {
   font-size: 16px;
 }
 
+div#header-wrapper {
+  background-color: #66000a;
+}
+
 header {
   padding: 1rem 2%;
-  background-color: #424e64;
-  color: #bbc2ca;
+  color: #ccccb8;
 }
 header h1 {
   font-size: 2rem;
@@ -131,9 +134,23 @@ header h2 {
   font-size: 1.3rem;
   font-weight: 300;
 }
+header form {
+  float: right;
+}
+header form input {
+  margin-right: 2%;
+  border: none;
+  border-radius: 10px;
+  padding: .2rem;
+  width: 6rem;
+  transition: width .5s;
+}
+header form input:focus {
+  width: 8rem;
+}
 
 nav {
-  background-color: #bbc2ca;
+  background-color: #ccccb8;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 nav ul li {
@@ -145,20 +162,20 @@ nav ul li:last-child {
   border-right: none;
 }
 nav ul li.active {
-  background-color: #9ea8b4;
+  background-color: #b7b79a;
 }
 nav ul li a {
   display: block;
   padding: .5rem 0;
-  color: #424e64;
+  color: #66000a;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
   transition: background 0.75s ease, color 0.75s ease;
 }
 nav ul li a:hover {
-  background-color: #424e64;
-  color: #bbc2ca;
+  background-color: #66000a;
+  color: #ccccb8;
 }
 
 main figure.banner {
@@ -169,20 +186,20 @@ main figure.banner img {
 }
 main h1 {
   margin: 1rem 0 0 2%;
-  color: #424e64;
+  color: #66000a;
   font-size: 2rem;
 }
 main h2 {
   margin: 0.75rem 0 0 2%;
-  color: #566683;
+  color: #99000f;
   font-size: 1.5rem;
 }
 main h3 {
-  color: #6d7f9f;
+  color: #cc0014;
   font-size: 1.2rem;
 }
 main p {
-  color: #35373a;
+  color: #131912;
   line-height: 130%;
 }
 main hr.fade-away {
@@ -199,26 +216,50 @@ main figure.photo img {
   width: 100%;
 }
 main figure.photo > figcaption {
-  color: #424e64;
+  color: #66000a;
   text-align: center;
+}
+main div.pop {
+  padding: 1rem 0;
+  background-color: #8c8c38;
+  text-align: center;
+  clear: both;
+}
+main div.pop .title {
+  font-size: 2.5rem;
+}
+main div.pop .subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+}
+main div.pop .copy {
+  padding: .5rem 0;
+}
+main div.pop .copy span {
+  color: #66000a;
+  font-size: 3rem;
+  font-weight: 700;
 }
 main div.blog article {
   margin: 0.5rem 2%;
   width: 96%;
 }
 
+div#footer-wrapper {
+  background-color: #66000a;
+}
+
 footer {
   width: 100%;
-  background-color: #424e64;
 }
 footer p {
   padding: .75rem 0;
-  color: #bbc2ca;
+  color: #ccccb8;
   font-size: 0.9rem;
   text-align: center;
 }
 footer p > a {
-  color: #bbc2ca;
+  color: #ccccb8;
 }
 
 .clearfix::after {
@@ -228,7 +269,7 @@ footer p > a {
 }
 
 /* TABLET SCREEN SIZE */
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 35rem) {
   main figure.photo {
     margin: 0.5rem 2%;
     width: 46%;
@@ -243,18 +284,7 @@ footer p > a {
   }
 }
 /* DESKTOP SCREEN SIZE */
-@media only screen and (min-width: 1140px) {
-  body {
-    background-image: url(../../images/polonez_car.png);
-  }
-
-  div#page-wrapper {
-    margin: 2rem auto;
-    max-width: 80rem;
-    background-color: #fff;
-    box-shadow: 0 0 10px #000000;
-  }
-
+@media only screen and (min-width: 60rem) {
   nav ul {
     margin-left: 2%;
     border-left: 1px solid rgba(0, 0, 0, 0.3);
@@ -269,6 +299,10 @@ footer p > a {
     padding: .5rem 1rem;
   }
 
+  main section {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
   main figure.photo {
     margin: 0.5rem 2%;
     width: 21%;
