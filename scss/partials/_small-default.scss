@@ -13,7 +13,7 @@ html {
 
 // --------------- BODY ---------------
 body {
-    font-family: $default-font;
+    font-family: $defaultFont;
     font-weight: $normalWeight;
     font-size: 16px;
 }
@@ -42,7 +42,7 @@ nav {
     ul li {
         float: left;
         width: 25%;
-        border-right: 1px solid rgba(0, 0, 0, 0.3)
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
     } // end li
     ul li:last-child {
         border-right: none;
@@ -64,6 +64,61 @@ nav {
         color: $secondaryColor;
     } // end anchor hover
 } // end nav
+
+// --------------- MAIN ---------------
+main {
+    figure.banner {
+        width: 100%;
+    } // end figure
+    figure.banner img {
+        width: 100%;
+    } // end figure img
+
+    h1 {
+        margin: 1rem 0 0 $gutter;
+        color: $primaryColor;
+        font-size: 2rem;
+    } // end h1
+    h2 {
+        margin: .75rem 0 0 $gutter;
+        color: lighten($primaryColor, 10%);
+        font-size: 1.5rem;
+    } // end h2
+    h3 {
+        color: lighten($primaryColor, 20%);
+        font-size: 1.2rem;
+    } // end h3
+
+    p {
+        color: $fontColor;
+        line-height: 130%;
+    } // end p
+
+    hr.fade-away {
+        margin: 0 $gutter;
+        border: none;
+        height: 2px;
+        background: linear-gradient(to right, rgba(66, 78, 100, 1) 0%, 
+                                              rgba(66, 78, 100, 0.01) 100%)
+    } // end horizontal line
+
+    figure.photo {
+        margin: .5rem $gutter;
+        width: 100% - $gutterDouble;
+    } // end figure
+    figure.photo img {
+        width: 100%;
+    } // end figure img
+    figure.photo > figcaption {
+        color: $primaryColor;
+        text-align: center;
+    } // end figure figcaption
+
+    div.blog article {
+        margin: .5rem $gutter;
+        width: 100% - $gutterDouble;
+    }
+} // end main
 
 // --------------- FOOTER ---------------
 footer {

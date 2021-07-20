@@ -161,6 +161,52 @@ nav ul li a:hover {
   color: #bbc2ca;
 }
 
+main figure.banner {
+  width: 100%;
+}
+main figure.banner img {
+  width: 100%;
+}
+main h1 {
+  margin: 1rem 0 0 2%;
+  color: #424e64;
+  font-size: 2rem;
+}
+main h2 {
+  margin: 0.75rem 0 0 2%;
+  color: #566683;
+  font-size: 1.5rem;
+}
+main h3 {
+  color: #6d7f9f;
+  font-size: 1.2rem;
+}
+main p {
+  color: #35373a;
+  line-height: 130%;
+}
+main hr.fade-away {
+  margin: 0 2%;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #424e64 0%, rgba(66, 78, 100, 0.01) 100%);
+}
+main figure.photo {
+  margin: 0.5rem 2%;
+  width: 96%;
+}
+main figure.photo img {
+  width: 100%;
+}
+main figure.photo > figcaption {
+  color: #424e64;
+  text-align: center;
+}
+main div.blog article {
+  margin: 0.5rem 2%;
+  width: 96%;
+}
+
 footer {
   width: 100%;
   background-color: #424e64;
@@ -182,4 +228,60 @@ footer p > a {
 }
 
 /* TABLET SCREEN SIZE */
+@media only screen and (min-width: 560px) {
+  main figure.photo {
+    margin: 0.5rem 2%;
+    width: 46%;
+    float: left;
+  }
+  main div.blog article {
+    width: 46%;
+    float: left;
+  }
+  main div.blog article:nth-child(2n + 1) {
+    clear: left;
+  }
+}
 /* DESKTOP SCREEN SIZE */
+@media only screen and (min-width: 1140px) {
+  body {
+    background-image: url(../../images/polonez_car.png);
+  }
+
+  div#page-wrapper {
+    margin: 2rem auto;
+    max-width: 80rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000000;
+  }
+
+  nav ul {
+    margin-left: 2%;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  nav ul li {
+    width: auto;
+  }
+  nav ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  nav ul li a {
+    padding: .5rem 1rem;
+  }
+
+  main figure.photo {
+    margin: 0.5rem 2%;
+    width: 21%;
+    float: left;
+  }
+  main div.blog article {
+    width: 29.33%;
+    float: left;
+  }
+  main div.blog article:nth-child(2n + 1) {
+    clear: none;
+  }
+  main div.blog article:nth-child(3n + 1) {
+    clear: left;
+  }
+}
